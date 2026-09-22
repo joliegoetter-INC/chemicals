@@ -1,0 +1,66 @@
+[
+  {
+    "catalog_no": "A244281-500g",
+    "cas": "162881-26-7",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A244281_162881-26-7.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/245/SDS-A244281.pdf",
+    "note": "Pre-existing file, skipped download; verified as PDF (7 pages) containing product no and CAS."
+  },
+  {
+    "catalog_no": "A329828-1000g",
+    "cas": "5888-33-5",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A329828_5888-33-5.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/330/SDS-A329828.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 6 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A221874-500g",
+    "cas": "105-16-8",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A221874_105-16-8.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/222/SDS-A221874.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 6 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A601465-500g",
+    "cas": "818-61-1",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A601465_818-61-1.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/602/SDS-A601465.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 7 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A827506-500g",
+    "cas": "32360-05-7",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A827506_32360-05-7.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/828/SDS-A827506.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 6 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A522584-500g",
+    "cas": "5117-12-4",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A522584_5117-12-4.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/523/SDS-A522584.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 6 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A499403-1000g",
+    "cas": "7328-17-8",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A499403_7328-17-8.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/500/SDS-A499403.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 7 pages, text contains product no and CAS."
+  },
+  {
+    "catalog_no": "A163225-1000g",
+    "cas": "7534-94-3",
+    "status": "downloaded",
+    "file": "/Users/v/Documents/chemicals-test/sds/AmBeed_A163225_7534-94-3.pdf",
+    "source_url": "https://us-file.ambeed.com/prodsds/amb-sds-en/164/SDS-A163225.pdf",
+    "note": "SDS-US (English). Product page product no matched catalog. Verified PDF, 6 pages, text contains product no and CAS."
+  }
+]

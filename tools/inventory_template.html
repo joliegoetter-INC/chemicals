@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chemical Inventory</title>
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1b;--mute:#6b6a66;--line:#e3e1db;--accent:#1f4e79;
+--red:#b3261e;--redbg:#fbe4e2;--org:#9a5b00;--orgbg:#fdebc8;--rev:#4a4a48;--revbg:#e6e5e1;--ok:#2e6b3a;--okbg:#e2f0e4;--chk:#5b3a8c;--chkbg:#ece4f7}
+@media (prefers-color-scheme:dark){:root{--bg:#151514;--card:#1f1f1d;--ink:#ecebe7;--mute:#a09f9a;--line:#33332f;--accent:#8ab4e0;
+--red:#ff8a80;--redbg:#4a1c19;--org:#ffc266;--orgbg:#47330f;--rev:#c9c8c3;--revbg:#33332f;--ok:#8fd19b;--okbg:#1c3522;--chk:#c6a8f5;--chkbg:#2f2445}}
+*{box-sizing:border-box}[hidden]{display:none!important}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 16px 10px}
+.wrap{max-width:1180px;margin:0 auto}
+h1{font-size:18px;margin:0 0 10px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+h1 small{font-weight:400;color:var(--mute);font-size:13px}
+#q{width:100%;padding:12px 14px;font-size:17px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink)}
+#q:focus{outline:2px solid var(--accent);outline-offset:1px}
+.bar{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip b{font-weight:600;opacity:.7;margin-left:4px}
+select{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 10px;font-size:13px}
+main{padding:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;color:inherit;font:inherit;border-top:5px solid var(--line)}
+.card:hover,.card:focus-visible{border-color:var(--accent);outline:none}
+.card.RED{border-top-color:var(--red)}.card.ORANGE{border-top-color:var(--org)}.card.REVIEW{border-top-color:var(--rev)}
+.ph{aspect-ratio:4/3;background:var(--line);width:100%;object-fit:cover;display:block}
+.body{padding:10px 12px 12px}.nick{font-size:17px;font-weight:650;line-height:1.2}
+.nm{color:var(--mute);font-size:13px;margin-top:2px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.meta{font-size:12.5px;color:var(--mute);margin-top:6px;font-variant-numeric:tabular-nums}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.pill{font-size:11.5px;font-weight:650;letter-spacing:.02em;border-radius:6px;padding:2px 7px}
+.pill.RED{background:var(--redbg);color:var(--red)}.pill.ORANGE{background:var(--orgbg);color:var(--org)}
+.pill.REVIEW{background:var(--revbg);color:var(--rev)}.pill.NONE{background:var(--okbg);color:var(--ok)}.pill.CHK{background:var(--chkbg);color:var(--chk)}
+.empty{color:var(--mute);padding:40px 0;text-align:center}
+dialog{border:none;border-radius:14px;padding:0;max-width:min(920px,94vw);width:100%;background:var(--card);color:var(--ink);max-height:92vh}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.d{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:0}
+.d img{width:100%;height:100%;max-height:92vh;object-fit:contain;background:#000}
+.dd{padding:18px 20px 22px;overflow:auto;max-height:92vh}
+.dd h2{margin:0;font-size:22px}.dd .sub{color:var(--mute);margin:2px 0 12px}
+.banner{border-radius:10px;padding:10px 12px;margin:0 0 12px;font-weight:600}
+.banner small{display:block;font-weight:400;margin-top:3px}
+.banner.RED{background:var(--redbg);color:var(--red)}.banner.ORANGE{background:var(--orgbg);color:var(--org)}.banner.REVIEW{background:var(--revbg);color:var(--rev)}.banner.CHK{background:var(--chkbg);color:var(--chk)}
+table{border-collapse:collapse;width:100%;font-size:14px}td{padding:5px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td:first-child{color:var(--mute);width:130px;padding-right:10px}
+.haz{margin:12px 0 0;padding-left:18px;font-size:14px}.haz li{margin:2px 0}
+.x{position:absolute;right:10px;top:8px;border:none;background:var(--card);color:var(--ink);font-size:22px;border-radius:50%;width:34px;height:34px;cursor:pointer}
+a{color:var(--accent)}
+.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table.t{font-size:13.5px;min-width:980px}table.t th{position:sticky;top:0;text-align:left;padding:9px 10px;background:var(--card);border-bottom:2px solid var(--line);cursor:pointer;white-space:nowrap;user-select:none}
+table.t td{padding:7px 10px;border-bottom:1px solid var(--line);color:var(--ink);width:auto}table.t td:first-child{color:var(--mute);width:auto}
+table.t tr.r{cursor:pointer}table.t tr.r:hover td{background:var(--bg)}
+table.t tr.g td{background:var(--bg);font-weight:650;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);padding-top:14px}
+table.t tr.RED td:first-child{box-shadow:inset 4px 0 var(--red)}table.t tr.ORANGE td:first-child{box-shadow:inset 4px 0 var(--org)}table.t tr.REVIEW td:first-child{box-shadow:inset 4px 0 var(--rev)}
+.btn{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 14px;font-size:14px;cursor:pointer}.btn.pri{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+table.t tr.g{cursor:pointer}table.t tr.g td::before{content:"▾ ";}table.t tr.g.closed td::before{content:"▸ ";}
+form.f{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;margin-top:6px}form.f label{font-size:12.5px;color:var(--mute);display:flex;flex-direction:column;gap:3px}form.f .w{grid-column:1/-1}
+form.f input,form.f select,form.f textarea{font:inherit;font-size:14px;padding:7px 9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.err{color:var(--red);font-size:13.5px;grid-column:1/-1}.acts{grid-column:1/-1;display:flex;gap:8px;justify-content:flex-end;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin-left:auto}.seg button{border:none;background:var(--card);color:var(--ink);padding:6px 12px;font-size:13px;cursor:pointer}.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+@media (max-width:700px){.d{grid-template-columns:1fr}.d img{max-height:46vh}.dd{max-height:none}dialog{max-height:96vh;overflow:auto}}
+</style></head><body>
+<header><div class="wrap">
+<h1>Chemical Inventory <small id="count"></small></h1>
+<input id="q" type="search" placeholder="Search name, nickname (BAPO, HDDA), CAS, vendor, lot, catalog no., hazard…" autofocus>
+<div class="bar" id="chips"></div>
+</div></header>
+<main><div class="wrap"><div class="grid" id="grid"></div><div class="tw" id="tw" hidden><table class="t" id="tbl"></table></div><div class="empty" id="empty" hidden>No bottles match.</div>
+<p style="color:var(--mute);font-size:12.5px;margin-top:22px">Built {{BUILT}} from Chemical_Inventory.xlsx. A blank flag means no reproductive or time-sensitive hazard was found. It does not mean harmless: read the hazard list and the SDS. REVIEW means hazards are unconfirmed, not that the item is safe.</p>
+</div></main>
+<p id="ro" hidden style="color:var(--mute);font-size:12.5px;padding:0 16px 20px;max-width:1180px;margin:0 auto">Read-only view. To add or edit bottles, run <code>python3 tools/serve.py</code> and open <code>http://localhost:8791/inventory.html</code>.</p>
+<dialog id="dlg"><button class="x" id="close" aria-label="Close">×</button><div class="d" id="detail"></div></dialog>
+<script>
+const DATA=/*DATA*/[];
+const FL={RED:"Reproductive or genetic hazard. Carl handles.",ORANGE:"Time-sensitive",REVIEW:"Hazards unconfirmed"};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+DATA.forEach(d=>d._s=[d.id,d.name,d.nick,d.cas,d.vendor,d.cat,d.lot,d.codes,d.haz,d.pubchem,d.flag,d.why,d.loc,d.catg,d.sub,d.zone].join(" ").toLowerCase());
+let flag="ALL",vendor="",catg="",view=(()=>{try{return localStorage.getItem("view")||"table"}catch(e){return "table"}})(),sortK="",sortD=1,API=false;
+const closed=new Set((()=>{try{return JSON.parse(localStorage.getItem("closed")||"[]")}catch(e){return []}})());
+const ORDER=["TPU & polymers","Additives","Monomers & oligomers","Uncategorized"];
+const filters=[["ALL","All"],["RED","Red"],["ORANGE","Orange"],["REVIEW","Review"],["NONE","No flag"],["CHK","Recheck"],["NOSDS","No SDS"]];
+const match=(d,f)=>f=="ALL"||(f=="CHK"?d.recheck:f=="NOSDS"?!d.sds:f=="NONE"?!d.flag:d.flag==f);
+function chips(){const c=document.getElementById("chips");
+ c.innerHTML=filters.map(([k,l])=>`<button class="chip" data-f="${k}" aria-pressed="${flag==k}">${l}<b>${DATA.filter(d=>match(d,k)).length}</b></button>`).join("")+
+ `<select id="v"><option value="">All vendors</option>${[...new Set(DATA.map(d=>d.vendor).filter(Boolean))].sort().map(v=>`<option ${v==vendor?"selected":""}>${esc(v)}</option>`).join("")}</select>`+
+ `<select id="c"><option value="">All categories</option>${ORDER.filter(o=>DATA.some(d=>d.catg==o)).map(v=>`<option ${v==catg?"selected":""}>${esc(v)}</option>`).join("")}</select>`+
+ (API?`<button class="btn pri" id="add">+ Add bottle</button>`:"")+`<span class="seg"><button data-v="table" aria-pressed="${view=="table"}">Table</button><button data-v="cards" aria-pressed="${view=="cards"}">Cards</button></span>`;
+ if(API)document.getElementById("add").onclick=()=>edit(null);
+ document.getElementById("c").onchange=e=>{catg=e.target.value;render()};
+ c.querySelectorAll(".seg button").forEach(b=>b.onclick=()=>{view=b.dataset.v;try{localStorage.setItem("view",view)}catch(e){};chips();render()});
+ c.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{flag=b.dataset.f;chips();render()});
+ document.getElementById("v").onchange=e=>{vendor=e.target.value;render()};}
+function pills(d){return `<span class="pill ${d.flag||"NONE"}">${d.flag||"NO FLAG"}</span>`+(d.recheck?`<span class="pill CHK">RECHECK</span>`:"")+(d.sds?"":`<span class="pill REVIEW">NO SDS</span>`)}
+function render(){const terms=document.getElementById("q").value.toLowerCase().split(/\s+/).filter(Boolean);
+ const list=DATA.filter(d=>match(d,flag)&&(!vendor||d.vendor==vendor)&&(!catg||d.catg==catg)&&terms.every(t=>d._s.includes(t)));
+ document.getElementById("grid").innerHTML=list.map(d=>`<button class="card ${d.flag}" data-id="${d.id}">
+ ${d.thumb?`<img class="ph" loading="lazy" src="${esc(d.thumb)}" alt="">`:`<div class="ph"></div>`}
+ <div class="body"><div class="nick">${esc(d.nick||d.name||"Unlabeled")}</div>${d.nick&&d.name?`<div class="nm">${esc(d.name)}</div>`:""}
+ <div class="meta">${esc(d.id)} · ${esc(d.vendor||"Unknown vendor")}${d.cas?" · CAS "+esc(d.cas):""}</div><div class="pills">${pills(d)}</div></div></button>`).join("");
+ const cols=[["id","ID"],["nick","Nickname"],["name","Name"],["sub","Type"],["cas","CAS"],["vendor","Vendor"],["flag","Flag"],["zone","Location"],["received","Received"],["sds","SDS"]];
+ const ord=d=>{const i=ORDER.indexOf(d.catg);return i<0?9:i};
+ const cmp=(a,b)=>sortK?String(a[sortK]).localeCompare(String(b[sortK]),undefined,{numeric:true})*sortD:a.sub.localeCompare(b.sub)||String(a.nick||a.name).localeCompare(String(b.nick||b.name));
+ const tl=[...list].sort((a,b)=>(ord(a)-ord(b))||cmp(a,b));
+ let last=null;document.getElementById("tbl").innerHTML=`<thead><tr>${cols.map(([k,l])=>`<th data-k="${k}">${l}${sortK==k?(sortD>0?" ▲":" ▼"):""}</th>`).join("")}</tr></thead><tbody>`+tl.map(d=>{
+  const g=(d.catg!==last)?`<tr class="g ${closed.has(d.catg)?"closed":""}" data-g="${esc(d.catg)}"><td colspan="${cols.length}">${esc(d.catg)} (${tl.filter(x=>x.catg==d.catg).length})</td></tr>`:"";last=d.catg;
+  return g+(closed.has(d.catg)?"":`<tr class="r ${d.flag}" data-id="${d.id}"><td>${esc(d.id)}</td><td><b>${esc(d.nick)}</b></td><td>${esc(d.name)}</td><td>${esc(d.sub)}</td><td style="white-space:nowrap">${esc(d.cas)}</td><td>${esc(d.vendor)}</td><td><span class="pills" style="margin:0">${pills(d)}</span></td><td>${esc(d.loc||d.zone)}${d.loc?"":' <span style="color:var(--mute)">(proposed)</span>'}</td><td>${esc(d.received)}</td><td>${d.sds?`<a href="${esc(d.sds)}" target="_blank" onclick="event.stopPropagation()">PDF</a>`:""}</td></tr>`)}).join("")+"</tbody>";
+ document.querySelectorAll("#tbl tr.g").forEach(g=>g.onclick=()=>{const k=g.dataset.g;closed.has(k)?closed.delete(k):closed.add(k);try{localStorage.setItem("closed",JSON.stringify([...closed]))}catch(e){};render()});
+ document.querySelectorAll("#tbl th").forEach(t=>t.onclick=()=>{const k=t.dataset.k;if(sortK==k){if(sortD<0){sortK="";sortD=1}else sortD=-1}else{sortK=k;sortD=1}render()});
+ document.querySelectorAll("#tbl tr.r").forEach(c=>c.onclick=()=>open(c.dataset.id));
+ document.getElementById("grid").hidden=view!="cards";document.getElementById("tw").hidden=view!="table"||!list.length;
+ document.getElementById("empty").hidden=list.length>0;
+ document.getElementById("count").textContent=`${list.length} of ${DATA.length} bottles`;
+ document.querySelectorAll(".card").forEach(c=>c.onclick=()=>open(c.dataset.id));}
+function open(id){const d=DATA.find(x=>x.id==id);const row=(k,v)=>v?`<tr><td>${k}</td><td>${v}</td></tr>`:"";
+ const haz=d.haz?d.haz.split("; ").map(h=>`<li>${esc(h)}</li>`).join(""):"";
+ document.getElementById("detail").innerHTML=`${d.photo?`<a href="${esc(d.photo)}" target="_blank"><img src="${esc(d.photo)}" alt="Label photo"></a>`:"<div></div>"}
+ <div class="dd">${API?`<button class="btn" style="float:right;margin-right:34px" onclick="edit('${d.id}')">Edit</button>`:""}<h2>${esc(d.nick||d.name||"Unlabeled")}</h2><div class="sub">${esc(d.nick?d.name:"")}</div>
+ ${d.flag?`<div class="banner ${d.flag}">${d.flag}: ${FL[d.flag]}<small>${esc(d.why)}</small></div>`:""}
+ ${d.recheck?`<div class="banner CHK">RECHECK<small>${esc(d.recheckWhy)}</small>${API?`<button class="btn" style="margin-top:8px" onclick="confirmOk('${d.id}',this)">✓ I checked the bottle: this entry is accurate</button>`:""}</div>`:""}
+ <table>${row("Bottle ID",esc(d.id))}${row("CAS",d.cas?`${esc(d.cas)} · <a target="_blank" href="https://pubchem.ncbi.nlm.nih.gov/#query=${esc(d.cas)}">PubChem</a>`:"")}
+ ${row("Category",esc(d.catg)+(d.sub?" · "+esc(d.sub):""))}${row("Proposed location",esc(d.zone))}${row("Vendor",esc(d.vendor))}${row("Catalog no.",esc(d.cat))}${row("Lot",esc(d.lot))}${row("Size",esc(d.size))}${row("Purity / grade",esc(d.purity))}
+ ${row("Physical state",esc(d.state))}${row("Location",esc(d.loc))}${row("Received",esc(d.received)+(d.receivedRaw?` <span style="color:var(--mute)">(written: ${esc(d.receivedRaw)})</span>`:""))}
+ ${row("Expiration",esc(d.exp))}${row("Storage",esc(d.storage))}${row("Signal word",esc(d.signal))}
+ ${row("SDS",d.sds?`<a target="_blank" href="${esc(d.sds)}">Open SDS (PDF)</a>`:"Not on file")}${row("Edited by hand",esc(d.edited))}${row("Opened",esc(d.opened))}${row("Source",esc(d.source)+(d.conf?`, ${esc(d.conf)} confidence`:""))}</table>
+ ${haz?`<ul class="haz">${haz}</ul>`:`<p style="color:var(--mute)">No hazard data from lookup. Check the SDS.</p>`}
+ ${d.notes?`<details style="margin-top:12px"><summary style="cursor:pointer;color:var(--mute)">Label reading notes</summary><p style="font-size:13px;color:var(--mute)">${esc(d.notes)}</p></details>`:""}</div>`;
+ document.getElementById("dlg").showModal();}
+async function confirmOk(id,b){b.disabled=true;b.textContent="Saving…";
+ try{const r=await (await fetch("/api/save",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id,fields:{recheck_done:true}})})).json();if(!r.ok)throw new Error(r.error);
+  try{sessionStorage.setItem("reopen",id)}catch(e){};location.reload()}catch(ex){b.disabled=false;b.textContent="Could not save: "+ex.message}}
+function edit(id){const d=id?DATA.find(x=>x.id==id):{};const v=k=>esc(d[k]??"");
+ const F=[["common_name","Nickname","nick"],["name","Name on label","name"],["cas","CAS","cas"],["vendor","Vendor","vendor"],["catalog_no","Catalog no.","cat"],["lot","Lot","lot"],["size","Size (number)","sizeN"],["unit","Unit","unit"],["purity","Purity / grade","purity"],["physical_state","Physical state","state"],["location","Location (where it really is)","loc"],["received","Received (YYYY-MM)","received"],["opened","Opened (YYYY-MM)","opened"],["expiration","Expiration (only if printed)","exp"]];
+ document.getElementById("detail").innerHTML=`<div class="dd" style="grid-column:1/-1"><h2>${id?"Edit "+esc(id):"Add a bottle"}</h2><div class="sub">Flags are never typed in. They are looked up from the CAS number when you save.</div>
+ <form class="f" id="ef">${F.map(([k,l,s])=>`<label>${l}<input name="${k}" value="${v(s)}"></label>`).join("")}
+ <label>Category<select name="category"><option value="">Auto</option>${ORDER.slice(0,3).map(o=>`<option ${d.catg==o?"selected":""}>${o}</option>`).join("")}</select></label>
+ <label>Type (subcategory)<input name="subcategory" value="${v("sub")}"></label>
+ <label class="w">Notes<textarea name="problems" rows="2">${v("notes")}</textarea></label>
+ ${id&&d.recheck?`<label class="w" style="flex-direction:row;align-items:center;gap:8px"><input type="checkbox" name="recheck_done"> I checked this bottle by eye: clear the RECHECK mark</label>`:""}
+ <div class="err" id="err"></div><div class="acts"><span id="busy" style="color:var(--mute);font-size:13px"></span><button type="button" class="btn" onclick="${id?`open('${id}')`:`document.getElementById('dlg').close()`}">Cancel</button><button class="btn pri">Save</button></div></form></div>`;
+ document.getElementById("dlg").open||document.getElementById("dlg").showModal();
+ document.getElementById("ef").onsubmit=async e=>{e.preventDefault();const fd=new FormData(e.target),fields={};
+  for(const [k,val] of fd.entries())fields[k]=k=="recheck_done"?true:val;
+  if(id){const orig={common_name:d.nick,name:d.name,cas:d.cas,vendor:d.vendor,catalog_no:d.cat,lot:d.lot,size:String(d.sizeN??""),unit:d.unit,purity:d.purity,physical_state:d.state,location:d.loc,received:d.received,opened:d.opened,expiration:d.exp,subcategory:d.sub,problems:d.notes};
+   for(const k in orig)if(String(orig[k]??"")===String(fields[k]??""))delete fields[k]; if(fields.category===""||fields.category===d.catg)delete fields.category;
+   if(!Object.keys(fields).length){open(id);return}}
+  document.getElementById("busy").textContent="Saving and re-checking hazards…";
+  try{const r=await (await fetch(id?"/api/save":"/api/add",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id,fields})})).json();
+   if(!r.ok)throw new Error(r.error);location.reload()}catch(ex){document.getElementById("busy").textContent="";document.getElementById("err").textContent=ex.message}}}
+fetch("/api/ping").then(r=>r.json()).then(j=>{API=!!j.ok;chips();render();try{const id=sessionStorage.getItem("reopen");if(id){sessionStorage.removeItem("reopen");open(id)}}catch(e){}}).catch(()=>{document.getElementById("ro").hidden=false});
+document.getElementById("close").onclick=()=>document.getElementById("dlg").close();
+document.getElementById("dlg").addEventListener("click",e=>{if(e.target.id=="dlg")e.target.close()});
+document.getElementById("q").oninput=render;chips();render();
+</script></body></html>

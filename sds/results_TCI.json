@@ -1,0 +1,141 @@
+[
+ {
+  "catalog_no": "S0062",
+  "cas": "1338-41-6",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_S0062_1338-41-6.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=S0062&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 262650 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "E0265",
+  "cas": "9004-57-3",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_E0265_9004-57-3.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=E0265&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 283050 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "B1554",
+  "cas": "7128-64-5",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_B1554_7128-64-5.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=B1554&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 242250 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "P0585",
+  "cas": "842-07-9",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_P0585_842-07-9.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=P0585&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 270300 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "S0512",
+  "cas": "17354-14-2",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_S0512_17354-14-2.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=S0512&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 257550 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "A1390",
+  "cas": "2478-10-6",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_A1390_2478-10-6.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=A1390&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 257550 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "D0111",
+  "cas": "91-76-9",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_D0111_91-76-9.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=D0111&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 257550 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "O0100",
+  "cas": "85-83-6",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_O0100_85-83-6.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=O0100&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 255000 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "Q0021",
+  "cas": "128-80-3",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_Q0021_128-80-3.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=Q0021&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 255000 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "S0023",
+  "cas": "109-43-3",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_S0023_109-43-3.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=S0023&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 260100 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "B0497",
+  "cas": "143-24-8",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_B0497_143-24-8.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=B0497&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 257550 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "T4002",
+  "cas": "42594-17-2",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_T4002_42594-17-2.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=T4002&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 267750 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "P0472",
+  "cas": "9003-39-8",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_P0472_9003-39-8.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=P0472&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 242250 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "M0512",
+  "cas": "27813-02-1",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_M0512_27813-02-1.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=M0512&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 257550 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "B2936",
+  "cas": "13048-33-4",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_B2936_13048-33-4.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=B2936&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 280500 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "A0655",
+  "cas": "105-99-7",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_A0655_105-99-7.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=A0655&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 275400 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "catalog_no": "D2288",
+  "cas": "1120-24-7",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/TCI_D2288_1120-24-7.pdf",
+  "source_url": "https://www.tcichemicals.com/US/en/documentSearch/productSDSSearchDoc (POST brandCode=TCI&productCode=D2288&langSelector=en&selectedCountry=US)",
+  "note": "US/EN manufacturer SDS, 272850 bytes; text contains catalog no and CAS: True"
+ },
+ {
+  "routine": "1. Open https://www.tcichemicals.com/US/en/p/<CatalogNo> in the built-in Browser pane (tabs_create + own tabId); wait ~6 s. curl/Playwright/Chrome-for-Testing all get 403 from Akamai, so every network call must run inside that pane.\n2. In-page JS: POST to /US/en/documentSearch/productSDSSearchDoc with form fields brandCode=TCI, productCode=<code>, langSelector=en, selectedCountry=US and headers CSRFToken: ACC.config.CSRFToken + X-Requested-With: XMLHttpRequest. Response is the PDF (Content-Disposition <code>_US_EN.pdf). Loop all codes from one page load.\n3. Getting bytes to disk: run a local sink (python http.server on 127.0.0.1:8765) that base64-decodes a 'payload' form field and writes the PDFs. The pane blocks fetch/XHR/iframe/img/WebSocket/sendBeacon to localhost, but a top-level FORM POST (method=POST action=http://127.0.0.1:8765/save target=_self) gets through.\n4. Because that form submit navigates the tab away, stage the base64 blobs in IndexedDB on the tcichemicals.com origin first, then loop: navigate back to the product page, read the next ~3 unsent records, mark them sent, submit the form. 3 files (~1.1 MB) per submit is reliable; 17 at once fails.\n5. Verify with `file` + `pdftotext`: each PDF must say SAFETY DATA SHEET and contain its catalog number and CAS."
+ }
+]

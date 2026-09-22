@@ -1,0 +1,438 @@
+[
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A244281-500g",
+  "cas": "162881-26-7",
+  "name": "(Phenylphosphoryl)bis(mesitylmethanone)",
+  "bottles": [
+   "B0001"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "S0062",
+  "cas": "1338-41-6",
+  "name": "Sorbitan Monostearate",
+  "bottles": [
+   "B0002"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "E0265",
+  "cas": "9004-57-3",
+  "name": "Ethyl Cellulose [9-11mPa\u00b7s, 5% in Toluene + Ethanol (80:20) at 25\u00b0C]",
+  "bottles": [
+   "B0003"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "B1554",
+  "cas": "7128-64-5",
+  "name": "2,5-Bis(5-tert-butyl-2-benzoxazolyl)thiophene",
+  "bottles": [
+   "B0004",
+   "B0007"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "74731-50G",
+  "cas": "2885-00-9",
+  "name": "1-Octadecanethiol",
+  "bottles": [
+   "B0005"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "P0585",
+  "cas": "842-07-9",
+  "name": "Sudan I",
+  "bottles": [
+   "B0006"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "S0512",
+  "cas": "17354-14-2",
+  "name": "Solvent Blue 35",
+  "bottles": [
+   "B0008"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "A1390",
+  "cas": "2478-10-6",
+  "name": "4-Hydroxybutyl Acrylate (stabilized with MEHQ)",
+  "bottles": [
+   "B0009"
+  ]
+ },
+ {
+  "vendor": "AGC Si-Tech",
+  "catalog_no": null,
+  "cas": null,
+  "name": "RESIFA SOLESPHERE NP-30",
+  "bottles": [
+   "B0010",
+   "B0018"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "D0111",
+  "cas": "91-76-9",
+  "name": "Benzoguanamine",
+  "bottles": [
+   "B0011"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "O0100",
+  "cas": "85-83-6",
+  "name": "Sudan IV",
+  "bottles": [
+   "B0012"
+  ]
+ },
+ {
+  "vendor": "Aqua Science, Inc.",
+  "catalog_no": null,
+  "cas": "10043-35-3",
+  "name": "Boric Acid",
+  "bottles": [
+   "B0013"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "Q0021",
+  "cas": "128-80-3",
+  "name": "Quinizarin Green SS",
+  "bottles": [
+   "B0014"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "182230-25G",
+  "cas": null,
+  "name": "Poly(methyl methacrylate)",
+  "bottles": [
+   "B0015"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "406317-25G",
+  "cas": "75081-21-9",
+  "name": "Isopropyl-9H-thioxanthen-9-one, mixture of 2- and 4-isomers",
+  "bottles": [
+   "B0016"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "200336-50G",
+  "cas": "9011-14-7",
+  "name": "Poly(methyl methacrylate)",
+  "bottles": [
+   "B0017"
+  ]
+ },
+ {
+  "vendor": "Cabot Corporation",
+  "catalog_no": "TPX5075",
+  "cas": null,
+  "name": "Treated Colloidal Silica TPX-5075",
+  "bottles": [
+   "B0019"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "200557-250G",
+  "cas": null,
+  "name": "Polystyrene-block-poly(ethylene-ran-butylene)-block-polystyrene",
+  "bottles": [
+   "B0020"
+  ]
+ },
+ {
+  "vendor": "Lubrizol",
+  "catalog_no": "AG8451",
+  "cas": null,
+  "name": "Lubrizol Sample AG8451",
+  "bottles": [
+   "B0021"
+  ]
+ },
+ {
+  "vendor": "Lubrizol",
+  "catalog_no": "Pearlbond 960",
+  "cas": null,
+  "name": "Lubrizol Sample Pearlbond 960",
+  "bottles": [
+   "B0022"
+  ]
+ },
+ {
+  "vendor": "The Candlemakers Store (via Amazon)",
+  "catalog_no": "X000L8P1TR",
+  "cas": null,
+  "name": "Methyl Cellulose (Non-FDA)",
+  "bottles": [
+   "B0023"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A329828-1000g",
+  "cas": "5888-33-5",
+  "name": "(1R,2R,4R)-rel-1,7,7-Trimethylbicyclo[2.2.1]heptan-2-yl acrylate",
+  "bottles": [
+   "B0024"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "290815-1L",
+  "cas": "103-11-7",
+  "name": "2-Ethylhexyl acrylate",
+  "bottles": [
+   "B0025"
+  ]
+ },
+ {
+  "vendor": "Sartomer (Arkema)",
+  "catalog_no": "FP01120-P",
+  "cas": "40220-08-4",
+  "name": "SR368",
+  "bottles": [
+   "B0026"
+  ]
+ },
+ {
+  "vendor": "Sartomer (Arkema)",
+  "catalog_no": "FP21359-P",
+  "cas": null,
+  "name": "CN968C",
+  "bottles": [
+   "B0027"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A221874-500g",
+  "cas": "105-16-8",
+  "name": "2-(Diethylamino)ethyl methacrylate",
+  "bottles": [
+   "B0028"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "S0023",
+  "cas": "109-43-3",
+  "name": "Dibutyl Sebacate",
+  "bottles": [
+   "B0029"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "B0497",
+  "cas": "143-24-8",
+  "name": "Tetraethylene Glycol Dimethyl Ether",
+  "bottles": [
+   "B0030"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A601465-500g",
+  "cas": "818-61-1",
+  "name": "2-Hydroxyethyl acrylate",
+  "bottles": [
+   "B0031"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "T4002",
+  "cas": "42594-17-2",
+  "name": "Tricyclo[5.2.1.0(2,6)]decanedimethanol Diacrylate (mixture of isomers) (stabilized with MEHQ)",
+  "bottles": [
+   "B0032"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A827506-500g",
+  "cas": "32360-05-7",
+  "name": "Octadecyl methacrylate",
+  "bottles": [
+   "B0033"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "P0472",
+  "cas": "9003-39-8",
+  "name": "Polyvinylpyrrolidone K 30, Average Molecular Wt. 40000",
+  "bottles": [
+   "B0034"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "M0512",
+  "cas": "27813-02-1",
+  "name": "Hydroxypropyl Methacrylate (mixture of 2-Hydroxypropyl and 2-Hydroxy-1-methylethyl Methacrylate) (stabilized with MEHQ)",
+  "bottles": [
+   "B0035"
+  ]
+ },
+ {
+  "vendor": "Sartomer (Arkema)",
+  "catalog_no": "FP17170-P",
+  "cas": null,
+  "name": "CN1964",
+  "bottles": [
+   "B0036"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "B2936",
+  "cas": "13048-33-4",
+  "name": "1,6-Bis(acryloyloxy)hexane (stabilized with MEHQ)",
+  "bottles": [
+   "B0037",
+   "B0038"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "A0655",
+  "cas": "105-99-7",
+  "name": "Dibutyl Adipate",
+  "bottles": [
+   "B0039",
+   "B0043"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A522584-500g",
+  "cas": "5117-12-4",
+  "name": "4-Acryloylmorpholine",
+  "bottles": [
+   "B0040"
+  ]
+ },
+ {
+  "vendor": "TCI",
+  "catalog_no": "D2288",
+  "cas": "1120-24-7",
+  "name": "N,N-Dimethyldecylamine",
+  "bottles": [
+   "B0041"
+  ]
+ },
+ {
+  "vendor": "Sartomer (Arkema)",
+  "catalog_no": "FP00140-P",
+  "cas": "67905-41-3",
+  "name": "SR406",
+  "bottles": [
+   "B0042"
+  ]
+ },
+ {
+  "vendor": "Sartomer (Arkema)",
+  "catalog_no": "CN981",
+  "cas": null,
+  "name": "CN981",
+  "bottles": [
+   "B0044"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A499403-1000g",
+  "cas": "7328-17-8",
+  "name": "Di(ethylene glycol) ethyl ether acrylate",
+  "bottles": [
+   "B0045"
+  ]
+ },
+ {
+  "vendor": null,
+  "catalog_no": null,
+  "cas": null,
+  "name": "VEEA",
+  "bottles": [
+   "B0046"
+  ]
+ },
+ {
+  "vendor": "AmBeed",
+  "catalog_no": "A163225-1000g",
+  "cas": "7534-94-3",
+  "name": "rel-(1R,2R,4R)-1,7,7-Trimethylbicyclo[2.2.1]heptan-2-yl methacrylate",
+  "bottles": [
+   "B0047"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "246832-500G",
+  "cas": "42978-66-5",
+  "name": "Tri(propylene glycol) diacrylate, mixture of isomers",
+  "bottles": [
+   "B0048"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "268542-1L",
+  "cas": "27813-02-1",
+  "name": "Hydroxypropyl methacrylate",
+  "bottles": [
+   "B0049"
+  ]
+ },
+ {
+  "vendor": "Sigma-Aldrich",
+  "catalog_no": "436909-500ML",
+  "cas": "72869-86-4",
+  "name": "Diurethane dimethacrylate, mixture of isomers",
+  "bottles": [
+   "B0050"
+  ]
+ },
+ {
+  "vendor": "SimpleNature",
+  "catalog_no": null,
+  "cas": null,
+  "name": "Vegetable Glycerin",
+  "bottles": [
+   "B0051"
+  ]
+ },
+ {
+  "vendor": "Nagase",
+  "catalog_no": null,
+  "cas": null,
+  "name": "Corrosive liquid, n.o.s. (STABILIZED (2-(Allyloxymethyl)acrylic acid methyl ester))",
+  "bottles": [
+   "B0052"
+  ]
+ }
+]

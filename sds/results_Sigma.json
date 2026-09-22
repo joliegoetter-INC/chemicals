@@ -1,0 +1,83 @@
+[
+ {
+  "catalog_no": "74731-50G",
+  "cas": "2885-00-9",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_74731_2885-00-9.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/sial/74731",
+  "note": "brand=sial; verified PDF, product number 74731 present in text"
+ },
+ {
+  "catalog_no": "182230-25G",
+  "cas": null,
+  "cas_from_sds": "9011-14-7",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_182230_noCAS.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/182230",
+  "note": "brand=aldrich; verified PDF, product number 182230 present in text; SDS lists CAS 9011-14-7 (targets.json had null)"
+ },
+ {
+  "catalog_no": "406317-25G",
+  "cas": "75081-21-9",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_406317_75081-21-9.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/406317",
+  "note": "brand=aldrich; verified PDF, product number 406317 present in text"
+ },
+ {
+  "catalog_no": "200336-50G",
+  "cas": "9011-14-7",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_200336_9011-14-7.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/200336",
+  "note": "brand=aldrich; verified PDF, product number 200336 present in text"
+ },
+ {
+  "catalog_no": "200557-250G",
+  "cas": null,
+  "cas_from_sds": "66070-58-4",
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_200557_noCAS.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/200557",
+  "note": "brand=aldrich; verified PDF, product number 200557 present in text; SDS lists CAS 66070-58-4 (targets.json had null)"
+ },
+ {
+  "catalog_no": "290815-1L",
+  "cas": "103-11-7",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_290815_103-11-7.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/290815",
+  "note": "brand=aldrich; verified PDF, product number 290815 present in text"
+ },
+ {
+  "catalog_no": "246832-500G",
+  "cas": "42978-66-5",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_246832_42978-66-5.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/246832",
+  "note": "brand=aldrich; verified PDF, product number 246832 present in text"
+ },
+ {
+  "catalog_no": "268542-1L",
+  "cas": "27813-02-1",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_268542_27813-02-1.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/268542",
+  "note": "brand=aldrich; verified PDF, product number 268542 present in text"
+ },
+ {
+  "catalog_no": "436909-500ML",
+  "cas": "72869-86-4",
+  "cas_from_sds": null,
+  "status": "downloaded",
+  "file": "/Users/v/Documents/chemicals-test/sds/Sigma_436909_72869-86-4.pdf",
+  "source_url": "https://www.sigmaaldrich.com/US/en/sds/aldrich/436909",
+  "note": "brand=aldrich; verified PDF, product number 436909 present in text"
+ }
+]

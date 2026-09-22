@@ -1,0 +1,195 @@
+{
+ "_note": "Proposed by Claude, to be confirmed by Carl. Key = CAS, or lowercase fragment of the label name when there is no CAS. Value = [category, subcategory].",
+ "9004-57-3": [
+  "TPU & polymers",
+  "Polymer (cellulosic)"
+ ],
+ "9011-14-7": [
+  "TPU & polymers",
+  "Polymer (PMMA)"
+ ],
+ "poly(methyl methacrylate)": [
+  "TPU & polymers",
+  "Polymer (PMMA)"
+ ],
+ "9003-39-8": [
+  "TPU & polymers",
+  "Polymer (PVP)"
+ ],
+ "polystyrene-block": [
+  "TPU & polymers",
+  "Thermoplastic elastomer (SEBS)"
+ ],
+ "pearlbond": [
+  "TPU & polymers",
+  "TPU"
+ ],
+ "ag8451": [
+  "TPU & polymers",
+  "TPU (unconfirmed Lubrizol sample)"
+ ],
+ "methyl cellulose": [
+  "TPU & polymers",
+  "Polymer (cellulosic)"
+ ],
+ "162881-26-7": [
+  "Additives",
+  "Photoinitiator"
+ ],
+ "75081-21-9": [
+  "Additives",
+  "Photoinitiator"
+ ],
+ "842-07-9": [
+  "Additives",
+  "Dye"
+ ],
+ "85-83-6": [
+  "Additives",
+  "Dye"
+ ],
+ "17354-14-2": [
+  "Additives",
+  "Dye"
+ ],
+ "128-80-3": [
+  "Additives",
+  "Dye"
+ ],
+ "7128-64-5": [
+  "Additives",
+  "Optical brightener"
+ ],
+ "1338-41-6": [
+  "Additives",
+  "Surfactant"
+ ],
+ "2885-00-9": [
+  "Additives",
+  "Chain transfer agent (thiol)"
+ ],
+ "91-76-9": [
+  "Additives",
+  "Crosslinker / resin intermediate"
+ ],
+ "10043-35-3": [
+  "Additives",
+  "Inorganic"
+ ],
+ "solesphere": [
+  "Additives",
+  "Filler (silica)"
+ ],
+ "colloidal silica": [
+  "Additives",
+  "Filler (silica)"
+ ],
+ "109-43-3": [
+  "Additives",
+  "Plasticizer"
+ ],
+ "105-99-7": [
+  "Additives",
+  "Plasticizer"
+ ],
+ "glycerin": [
+  "Additives",
+  "Plasticizer / humectant"
+ ],
+ "143-24-8": [
+  "Additives",
+  "Solvent"
+ ],
+ "1120-24-7": [
+  "Additives",
+  "Amine"
+ ],
+ "2478-10-6": [
+  "Monomers & oligomers",
+  "Monomer: acrylate"
+ ],
+ "5888-33-5": [
+  "Monomers & oligomers",
+  "Monomer: acrylate"
+ ],
+ "103-11-7": [
+  "Monomers & oligomers",
+  "Monomer: acrylate"
+ ],
+ "818-61-1": [
+  "Monomers & oligomers",
+  "Monomer: acrylate"
+ ],
+ "7328-17-8": [
+  "Monomers & oligomers",
+  "Monomer: acrylate"
+ ],
+ "5117-12-4": [
+  "Monomers & oligomers",
+  "Monomer: acrylamide"
+ ],
+ "40220-08-4": [
+  "Monomers & oligomers",
+  "Monomer: multifunctional acrylate"
+ ],
+ "42594-17-2": [
+  "Monomers & oligomers",
+  "Monomer: multifunctional acrylate"
+ ],
+ "13048-33-4": [
+  "Monomers & oligomers",
+  "Monomer: multifunctional acrylate"
+ ],
+ "67905-41-3": [
+  "Monomers & oligomers",
+  "Monomer: multifunctional acrylate"
+ ],
+ "42978-66-5": [
+  "Monomers & oligomers",
+  "Monomer: multifunctional acrylate"
+ ],
+ "105-16-8": [
+  "Monomers & oligomers",
+  "Monomer: methacrylate (amine)"
+ ],
+ "32360-05-7": [
+  "Monomers & oligomers",
+  "Monomer: methacrylate"
+ ],
+ "27813-02-1": [
+  "Monomers & oligomers",
+  "Monomer: methacrylate"
+ ],
+ "7534-94-3": [
+  "Monomers & oligomers",
+  "Monomer: methacrylate"
+ ],
+ "72869-86-4": [
+  "Monomers & oligomers",
+  "Monomer: urethane dimethacrylate"
+ ],
+ "veea": [
+  "Monomers & oligomers",
+  "Monomer: acrylate (identity unconfirmed)"
+ ],
+ "allyloxymethyl": [
+  "Monomers & oligomers",
+  "Monomer: acrylate (corrosive, drum)"
+ ],
+ "cn968c": [
+  "Monomers & oligomers",
+  "Oligomer: urethane acrylate"
+ ],
+ "cn1964": [
+  "Monomers & oligomers",
+  "Oligomer: urethane methacrylate"
+ ],
+ "cn981": [
+  "Monomers & oligomers",
+  "Oligomer: urethane acrylate"
+ ],
+ "66070-58-4": [
+  "TPU & polymers",
+  "Thermoplastic elastomer (SEBS)"
+ ]
+}
